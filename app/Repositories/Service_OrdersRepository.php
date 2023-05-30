@@ -16,7 +16,7 @@ Class Service_OrdersRepository
 
     public function getAllOrders()
     {
-        return $this->entity->get();
+        return $this->entity->paginate(perPage:5);
     }
 
     public function createOrders(array $data)

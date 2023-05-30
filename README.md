@@ -10,3 +10,20 @@
 ## Sistema Api Com laravel 10, Docker, Git, cache no linux Ubuntu
 
 Pra Rodar baixar e configure o arquivo .envExemplo para ".env" rodando o comando docker-composer up -d.
+
+Route::get('/getorderservice') -> Buscar todos os dados
+   - http://localhost:8002/v1/createorderservice
+ 
+Route::get('/getorderservice/{identify} -> buscar intem especifico
+   - http://localhost:8002/v1/getorderservice/ad0e7168-acd9-4d56-9ef3-d7cb977ae1f5
+   
+Route::post('/createorderservice') -> criar dados
+   - http://localhost:8002/v1/createorderservice
+{
+            "vehiclePlate": "jps1890",
+            "entryDateTime": "27/05/2022",
+            "exitDateTime": "30/06/2022",
+            "priceType": "10,50",
+            "price": "10,50",
+            "userId": 1
+}
